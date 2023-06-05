@@ -1,9 +1,13 @@
 import React from 'react'
 import "./AboutStyle.css"
+import Navbar from '../Navbar';
 
  function About() {
   return (
-    <div>This is About Page</div>
+    <div>
+      <Navbar />
+      <h1>This is About Page</h1>
+    </div>
   )
 }
 export default About;

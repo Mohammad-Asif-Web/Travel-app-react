@@ -1,9 +1,13 @@
 import React from 'react'
 import "./ContactStyle.css"
+import Navbar from '../Navbar';
 
  function Contact() {
   return (
-    <div>This is Contact Page</div>
+    <div>
+      <Navbar />
+      <h1>This is Contact Page</h1>
+    </div>
   )
 }
 export default Contact;
