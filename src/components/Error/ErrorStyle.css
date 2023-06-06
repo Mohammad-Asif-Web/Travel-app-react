@@ -1,0 +1,18 @@
+.error-body{
+    /* animation: bodyBg 10s infinite forwards linear; */
+    animation: bodyBg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+@keyframes bodyBg {
+    0%   {background-color: rgb(202, 95, 95);}
+    25%  {background-color: rgb(206, 206, 97);}
+    50%  {background-color: rgb(102, 102, 212);}
+    100% {background-color: rgb(102, 211, 102);}
+}
+
+
