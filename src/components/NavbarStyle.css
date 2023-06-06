@@ -93,7 +93,6 @@ button a:hover{
         padding: 1.5rem;
         margin: auto;
         border-radius: 4px;
-        /* width: 80%; */
         background-color: var(--primary);
         text-decoration: none;
         color: #fff;

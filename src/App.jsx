@@ -6,6 +6,7 @@ import About from './components/About/About'
 import Service from './components/Service/Service'
 import Contact from './components/Contact/Contact'
 import Signup from './components/Signup/Signup'
+import Error from './components/Error/Error'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path='*' element={<Error />} />
       </Routes>
       
     </div>
