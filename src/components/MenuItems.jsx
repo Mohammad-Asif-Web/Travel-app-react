@@ -30,6 +30,12 @@ export const MenuItems = [
         cName : "nav-links",
         icon: <FaAddressBook />
     },
+    // {
+    //     title: "Cateogory",
+    //     url: "/category",
+    //     cName : "nav-links",
+    //     icon: <FaAddressBook />
+    // },
     {
         title: "Sign Up",
         url: "/signup",
