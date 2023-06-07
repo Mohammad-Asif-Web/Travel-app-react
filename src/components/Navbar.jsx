@@ -11,6 +11,7 @@ import { FaTimes } from "react-icons/fa";
     const [icon, setIcon] = useState({
         clicked : false
     });
+    const [isActive, setIsActive] = useState(false);
     //  let state = { clicked: false};
      const handleClick = () =>{
         if(icon.clicked === false){
@@ -23,7 +24,13 @@ import { FaTimes } from "react-icons/fa";
                 clicked : false
             })
         }
+        // toggle class active class add to main menu
+        setIsActive(isActive => !isActive)
      }
+
+    //  adding toggle class to Main menu
+     let toggleClass = isActive ? "nav-menu active" : 'nav-menu'
+
 
     return (
         <nav className='NavbarItems'>
@@ -32,14 +39,12 @@ import { FaTimes } from "react-icons/fa";
             <div className='navbar-logo'>
                 <Link to="/" >Trippy</Link>
             </div>
-            
             {/* Side Menu Icons */}
             <div className='menu-icons' onClick={handleClick}>
                 {icon.clicked ? <FaTimes /> : <FaBars />}
             </div>
-
             {/* Main Menu */}
-            <ul className='nav-menu'>
+            <ul className={toggleClass} >
                 {MenuItems.map((item, idx) =>{
                     return(
                         <li key={idx}>

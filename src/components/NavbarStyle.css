@@ -3,10 +3,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    box-shadow: 0 5px 15px 0 var(--black);
+    box-shadow: 0 7px 15px -6px var(--black);
     width: 95%;
     height: 80px;
     border-radius: 15px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
 }
 
 .navbar-logo a{
@@ -60,9 +65,16 @@ button a:hover{
     color: var(--white);
 
 }
+.menu-icons{
+    display: none;
+    cursor: pointer;
+}
 
 /* Responsive CSS */
 @media screen and (max-width: 850px) {
+    .NavbarItems{
+        z-index: 99;
+    }
     .nav-menu{
         display: flex;
         flex-direction: column;
@@ -70,13 +82,21 @@ button a:hover{
         background: lightblue;
         align-items: center;
         width: 100%;
-        height: auto;
+        height: 100vh;
         position: absolute;
         top: 0;
-        left: 0;
-        opacity: 1;
+        left: -100%;
+        opacity: 0;
         padding: 80px 0 30px 0;
         margin: 0;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-menu.active{
+        left: 0;
+        opacity: 1;
+        z-index: -1;
+        transition: 0.3s ease-in-out;
     }
     .nav-links{
         width: 100%;
@@ -99,7 +119,13 @@ button a:hover{
         font-size: 1.2rem;
         font-weight: 700;
     }
-
+    .menu-icons{
+        display: block;
+    }
+    .menu-icons svg{
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
 }
 
 
