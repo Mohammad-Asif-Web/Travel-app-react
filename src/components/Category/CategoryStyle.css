@@ -1,0 +1,33 @@
+.category-section{
+    width: 500px;
+    height: auto;
+    background: #fff;
+    /* padding: 20px; */
+    border: 1px solid #eee7e7;
+}
+.category-section h1{
+    color: green;
+    font-size: 2rem;
+}
+
+.category-section .price-filter .price-box .box{
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border: 1px solid #e7dbdb;
+}
+.category-section hr{
+    background: red;;
+}
+
+  
+/* @apply w-6 h-6 appearance-none pointer-events-auto; */
+
+
+
+
+
