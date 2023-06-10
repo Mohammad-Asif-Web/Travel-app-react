@@ -3,6 +3,8 @@ import Navbar from '../Navbar';
 import "./HomeStyle.css"
 import Hero from '../Hero/Hero';
 import Destination from '../Destination/Destination';
+import Trip from '../Trip/Trip';
+import Footer from '../Footer/Footer';
 
 
  function Home() {
@@ -20,7 +22,8 @@ import Destination from '../Destination/Destination';
         />
 
         <Destination />
-
+        <Trip />
+        <Footer />
         
 
 
