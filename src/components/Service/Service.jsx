@@ -2,6 +2,8 @@ import React from 'react'
 import "./ServiceStyle.css"
 import Navbar from '../Navbar';
 import Hero from '../Hero/Hero';
+import Trip from '../Trip/Trip';
+import Footer from '../Footer/Footer';
 
  function Service() {
   return (
@@ -13,6 +15,8 @@ import Hero from '../Hero/Hero';
           title="Service"
           url="/"
         />
+        <Trip />
+        <Footer />
     </div>
   )
 }
