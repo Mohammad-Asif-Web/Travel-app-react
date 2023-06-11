@@ -23,7 +23,7 @@ import Footer from '../Footer/Footer';
 
         <Destination />
         <Trip />
-        <Footer />
+        {/* <Footer /> */}
         
 
 
