@@ -16,7 +16,7 @@ import Footer from '../Footer/Footer';
           url="/"
         />
         <Trip />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
