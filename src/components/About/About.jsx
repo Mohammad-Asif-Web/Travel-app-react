@@ -28,7 +28,7 @@ import Footer from '../Footer/Footer';
             <p>To sow the seeds of par-excellence services with customer centric aproach and reap the trust of worldwide clients..</p>
           </div>
         </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
