@@ -24,7 +24,7 @@ import Footer from '../Footer/Footer';
             <button>Send Message</button>
           </form>
         </div>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
