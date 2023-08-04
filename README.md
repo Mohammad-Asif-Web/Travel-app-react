@@ -27,3 +27,6 @@ If you don't have these tools installed, you can do so by clicking the links for
 
 ### You can now start building your React projects and style them with Tailwind CSS.
 
+
+[See Live](https://traveltrippy.netlify.app/)
+
